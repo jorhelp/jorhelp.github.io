@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jor's page</title>
+    <title>Jorhelp</title>
 
     <link rel="shortcut icon" href="static/img/favicon.ico"/>
     <link rel="stylesheet" href="static/css/base.css"/>
@@ -27,6 +27,39 @@
     <script src="static/js/jquery-3.6.0.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
 
+    <!-- 导航 -->
+    <div class="navbar my-navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse-1">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="logo animated rubberBand infinite slow
+                        " alt="Jor" src="static/img/jor.png">
+                </a>
+            </div>
+
+            <!-- 下弹菜单，通过id进行绑定 -->
+            <div id="navbar-collapse-1" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="photo-wall.html">Photo-wall</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(".navbar").offset().top > 50) {$(".navbar-fixed-top").addClass("top-nav");
+            }else {$(".navbar-fixed-top").removeClass("top-nav");}
+        })
+    </script>
 </body>
 
 

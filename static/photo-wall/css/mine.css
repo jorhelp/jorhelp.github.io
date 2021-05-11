@@ -1,0 +1,49 @@
+
+/** 普通指针样式**/
+html {
+    cursor: url(../../img/Cursor.cur), default;
+}
+/** 链接指针样式**/
+a:hover{cursor:url(../../img/Alternate.cur), pointer;}
+button:hover{cursor:url(../../img/Alternate.cur), pointer;}
+img:hover{cursor:url(../../img/Alternate.cur), pointer;}
+
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: #ffffff;
+}
+
+img{
+    border-radius: 8px;
+    /* 水平阴影的位置 垂直阴影的位置 模糊距离 阴影的尺寸 阴影的颜色 */
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.82);
+}
+img:hover{
+    border-radius: 8px;
+    box-shadow: 0 0 0;
+}
+
+
+/*--------- 修改插件的样式 ---------*/
+.chroma-gallery .chrg-description{
+    border-radius: 8px;
+}
+
+
+/*--------- 自定义样式 ---------*/
+.photo_wall{
+    padding-left: 1.2rem;
+    padding-bottom: 8rem;
+}
+
+.photo_wall_title{
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-style: italic;
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorhelp|photo-wall</title>
+
+    <link rel="shortcut icon" href=""img/favicon.ico" %}" />
+    <link rel="stylesheet" type="text/css" href="static/photo-wall/css/mine.css">
+    <link rel="stylesheet" type="text/css" href="static/css/animate-3.7.2.min.css">
+    <link rel="stylesheet" type="text/css" href="static/photo-wall/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/photo-wall/css/chromagallery.min.css">
+</head>
+
+
+<body>
+<div class="photo_wall_title animated bounce">
+    Rainy days, I always wake up many memories.
+</div>
+<div class="photo_wall">
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/0.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/0.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/1.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/1.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/2.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/2.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/3.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/3.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/4.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/4.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/5.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/5.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/6.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/6.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/7.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/7.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/8.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/8.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/9.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/9.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/10.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/10.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/11.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/11.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/12.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/12.jpg">
+    </div>
+    <div class="chroma-gallery mygallery">
+        <img src="static/photo-wall/img/thumbs/13.jpg"
+             alt="Nothing"
+             data-largesrc="static/photo-wall/img/13.jpg">
+    </div>
+</div>
+
+<!-- 下面这些要保证放到图片之后 -->
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script src="static/photo-wall/js/chromagallery.pkgd.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".mygallery").chromaGallery
+        ({
+            color: '#000',       // 点开图片之后的背景色
+            screenOpacity: 0.6,  // 点开图片之后屏幕的透明度，值在0-1之间
+            gridMargin: 20,		 // 网格图片之间的间隔
+            maxColumns: 5,		 // 网格布局的最大列数
+            dof: true,			 // 糢糊背景效果，对性能有影响
+            fullscreen: true,    // 是否添加全屏模式
+            easing: 'easeInOutBack'    // 设置打开和关闭图片画廊时的easing动画效果，可用值如下:
+            // linear ease easeIn easeOut easeInOut easeInQuad easeInCubic easeInQuart
+            // easeInQuint easeInSine easeInExpo easeInCirc easeInBack easeOutQuad easeOutCubic
+            // easeOutQuart easeOutQuint easeOutSine easeOutExpo easeOutCirc easeOutBack
+            // easeInOutQuad easeInOutCubic easeInOutQuart easeInOutQuint easeInOutSine
+            // easeInOutExpo easeInOutCirc easeInOutBack
+        });
+    });
+</script>
+</body>
+</html>

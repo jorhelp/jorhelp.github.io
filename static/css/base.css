@@ -161,3 +161,58 @@ body {
     outline: none;  /* 获得焦点也不显示边框 */
     padding: 0.8rem;
 }
+
+
+
+.my-navbar {
+    padding:20px 10px;
+    background-color: transparent;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+.top-nav {padding:0;background:#33333317;}
+.active{
+    /* 可以自定义激活菜单的样式 */
+}
+
+.my-navbar a:hover {
+    color:#45bcf9 !important;
+    background:transparent;
+    outline:0;
+    text-decoration:none;
+    font-size: 18px;
+}
+/* 将这条属性单独抽出来是为了实现一种效果，勿动!! */
+.my-navbar a{
+    color: #0f0f0f;
+    transition: color 0.5s ease-in-out,
+    font-size 0.5s ease-in-out;
+}
+
+/*折叠菜单按钮*/
+button.navbar-toggle {
+    border: 0px;
+    background-color: transparent;
+}
+button.navbar-toggle > span.icon-bar {
+    background-color: #222222;
+}
+
+/*logo 图片位置调整 */
+.navbar-brand{
+    padding-top: 5px !important;
+}
+/*logo 图片的大小*/
+.logo{
+    width: 38px;
+    height: 38px;
+}
+
+/* 顶部菜单，以下两个需同时定义背景，否则会卡顿 */
+.collapsing{
+    background: linear-gradient(55deg,#ff9af8c4,#4f5ae29e,#3df3ed9e);
+    border-radius: 8px;
+}
+.in{
+    background: linear-gradient(55deg,#ff9af8c4,#4f5ae29e,#3df3ed9e);
+    border-radius: 8px;
+}
