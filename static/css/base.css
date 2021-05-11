@@ -7,11 +7,11 @@
 
 /** 普通指针样式**/
 html {
-cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/Cursor.cur), default;
 }
 /** 链接指针样式**/
-/*a:hover{cursor:url(https://note.jorhelp.cn/staticFiles/img/Alternate.png), pointer;}*/
-/*button:hover{cursor:url(https://note.jorhelp.cn/staticFiles/img/Alternate.png), pointer;}*/
+a:hover{cursor:url(../img/Alternate.cur), pointer;}
+button:hover{cursor:url(../img/Alternate.cur), pointer;}
 
 
 body{
