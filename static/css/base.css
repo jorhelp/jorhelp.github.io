@@ -1,0 +1,163 @@
+*{
+    /*-- 下面这两行坑死了，会让markdown无法缩进.. --*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+
+/** 普通指针样式**/
+html {
+cursor: url(../img/cursor.png), auto;
+}
+/** 链接指针样式**/
+/*a:hover{cursor:url(https://note.jorhelp.cn/staticFiles/img/Alternate.png), pointer;}*/
+/*button:hover{cursor:url(https://note.jorhelp.cn/staticFiles/img/Alternate.png), pointer;}*/
+
+
+body{
+    padding-top: 80px;
+}
+/* 解决p标签英文不换行的问题 */
+p{
+	word-wrap: break-word;
+	word-break: break-all;
+}
+a, p{
+    font-size: 1.5rem;
+}
+a{
+    background:transparent !important;
+    color:black;
+}
+a:hover {
+    color:#45bcf9 !important;
+    background:transparent;
+    outline:0;
+    text-decoration:none;
+}
+/* 将这条属性单独抽出来是为了实现一种效果，勿动!! */
+a{
+    transition: color 0.5s ease-in-out;
+}
+
+img{
+    border-radius: 10px;
+    /* 水平阴影的位置 垂直阴影的位置 模糊距离 阴影的尺寸 阴影的颜色 */
+    box-shadow: 0 0 2.5rem -1px rgba(0,0,0,.9);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2.5rem 0;
+}
+img.logo{
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
+    margin: 0;
+}
+/* 验证码 */
+img.captcha{
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+#id_captcha_1{
+    width: 8rem;
+    margin-top: 0;
+    margin-left: 0.8rem;
+    border: 1px solid #ccc;
+    padding-left: 1rem;
+    border-radius: 5px;
+}
+
+
+/* Sticky footer styles
+--------------------------------------------------*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 15rem;
+}
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    /*height: 80px;*/
+    line-height: 1.5rem;
+}
+/*-------------------------------------------------*/
+
+/* 警告框 */
+.alert{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* 返回顶部 */
+#back-to-top{
+    bottom: 4rem;
+    right: 3rem;
+    display: none;
+    position: fixed;
+    font-size: 2.5rem;
+}
+
+/* 设置按钮 */
+#settings{
+    width: 2.5rem;
+    bottom: 4rem;
+    left: 3rem;
+    position: fixed;
+    font-size: 2.5rem;
+}
+
+/* 旋转 */
+.rotating{
+  width: auto;
+  height: auto;
+  background: transparent;
+  animation:rotating 2s linear infinite;
+}
+/*
+  rotating : 定义的动画名称
+  1s : 动画时间
+  linear : 动画以何种运行轨迹完成一个周期
+  infinite :规定动画应该无限次播放
+ */
+@keyframes rotating{
+  0%{-webkit-transform:rotate(0deg);}
+  25%{-webkit-transform:rotate(90deg);}
+  50%{-webkit-transform:rotate(180deg);}
+  75%{-webkit-transform:rotate(270deg);}
+  100%{-webkit-transform:rotate(360deg);}
+}
+
+/* "设置" 按钮的面板 */
+.settings-menu{
+    background: #c4c3ffc7 !important;
+    border-radius: 0.8rem !important;
+    min-width: 10rem !important;
+    font-size: 2.8rem !important;
+}
+
+
+/* 定义一个没有样式的按钮 */
+.key{
+    background-color: transparent;
+    border-style: none;
+    outline: none;  /* 获得焦点也不显示边框 */
+}
+
+/* 带有padding的key */
+.key-padding{
+    background-color: transparent;
+    border-style: none;
+    outline: none;  /* 获得焦点也不显示边框 */
+    padding: 0.8rem;
+}
