@@ -1,0 +1,23 @@
+/* 代码部分 */
+pre{
+    background-color: #011627;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0 0 2.5rem -1px rgba(0,0,0,.9);
+}
+
+body{
+    /*padding-top: 2rem;*/
+    line-height: 2.8rem;
+    font-family: sans-serif;
+}
+
+/* 文章内的链接突出色 */
+a{
+    color: #a81aff !important;
+}
+
+/* 代码高亮部分 */
+.hljs{
+    background-color: inherit;
+}
